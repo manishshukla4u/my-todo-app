@@ -28,5 +28,3 @@ for index, todo in enumerate(todos):
 # st.text_area("")
 st.text_input(label="Enter a Todo", placeholder="Add new todo",
               on_change=add_todo, key="new_todo")     ## on_change argument is to connect this text box to an action or call-back function
-
-st.session_state
