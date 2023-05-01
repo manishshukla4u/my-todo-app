@@ -3,6 +3,8 @@ import functions
 
 todos = functions.get_todo()
 
+st.set_page_config(page_title="Todo app", layout="wide")
+
 def add_todo():
     todo = st.session_state["new_todo"] + "\n"     ## session_state object contains the session detail and its a dictionary
     todos.append(todo)
